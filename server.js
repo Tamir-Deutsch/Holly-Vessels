@@ -7,13 +7,13 @@ const url = process.env.MONGODB_URI;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-// Serve static files from the "pages" directory
-app.use(express.static(path.join(__dirname, 'pages')));
+app.use(express.static('pages'));
 db.connect(url).then(() => console.log('db on'));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pages', 'index.html'));
-  });  
+    res.sendFile(__dirname + '/pages/index.html');
+})
+
 
 app.get('/signup', (req, res) => {
     res.sendFile(__dirname + '/pages/signUp.html');
