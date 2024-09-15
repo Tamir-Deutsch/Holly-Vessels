@@ -42,7 +42,7 @@ let productsArr = [];
 
 // Showing the products on page
 const showProducts = async () => {
-    fetch('/products')
+    fetch('https://holly-vessels.onrender.com/products')
         .then(res => res.json())
         .then(data => {
             productsArr = [...data];

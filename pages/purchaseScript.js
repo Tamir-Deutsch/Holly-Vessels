@@ -12,7 +12,7 @@ const approve = () => {
     let userEmailData = localStorage.getItem('userEmailItem');
     let prodArrData = JSON.parse(localStorage.getItem('prodArrItem'));
 
-    fetch('/purchase', {
+    fetch('https://holly-vessels.onrender.com/purchase', {
         headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
         method: 'post',
         body: JSON.stringify({

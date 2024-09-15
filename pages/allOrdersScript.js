@@ -2,7 +2,7 @@ const body = document.querySelector('body');
 
 
 const showPendingOrders = () => {
-    fetch('/allPending')
+    fetch('https://holly-vessels.onrender.com/allPending')
         .then(res => res.json())
         .then(data => {
             data.forEach(val => {

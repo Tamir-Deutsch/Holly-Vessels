@@ -4,7 +4,7 @@ const signin = () => {
     let password = document.getElementById('password').value;
 
     // Passing email and password values to the server 
-    fetch('/signIn', {
+    fetch('https://holly-vessels.onrender.com/signIn', {
         headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
         method: 'post',
         body: JSON.stringify({
