@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Products page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <h1>SV-shop</h1>
+        <div id="topSection">
+            <input type="text" id="searchInput" oninput="searchProduct()" placeholder="Search product                                     🔍" >
+            <select name="" id="select">
+                <option value="1">Sort by name</option>
+                <option value="2">Sort by price</option>
+            </select>
+            <button id="sortBtn" onclick="sortProducts()">Sort</button><br>
+        </div>
+
+        <div id="productsContainer">
+        </div>
+        <button id="buyBtn" onclick="buy()">Buy!</button>
+    </div>
+    <script src='productsScript.js'></script>
+</body>
+
+</html>

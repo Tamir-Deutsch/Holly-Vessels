@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sign up</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='signupScript.js'></script>
+</head>
+
+<body>
+    <h1>SV-shop</h1>
+    <form id="signUpForm" name="signup" action="/detailForm" method="post" onsubmit="return valid()">
+        <input class="inputs" name="userName" type="text" id="nameInput" placeholder="Enter name" minlength="3" required><br>
+        <input class="inputs" name="userEmail" type="text" placeholder="Enter email" required><br>
+        <input class="inputs" name="userPassword" type="text" placeholder="Enter password" minlength="5" required><br>
+        <input class="buttons" type="submit" value="Sign up">
+    </form>
+</body>
+
+</html>

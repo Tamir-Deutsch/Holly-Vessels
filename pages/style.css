@@ -1,0 +1,222 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FAF3F0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* index and sign up page */
+
+#signInDiv {
+    width: 450px;
+    height: 440px;
+    background-color: powderblue;
+    margin: 58px auto;
+}
+
+#signUpForm {
+    width: 450px;
+    height: 440px;
+    background-color: powderblue;
+    margin: 100px auto;
+}
+
+.inputs {
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    margin-left: 90px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+#email {
+    margin-top: 85px;
+}
+
+#password {
+    margin-top: 20px;
+}
+
+#nameInput {
+    margin-top: 115px;
+}
+
+.buttons {
+    width: 265px;
+    height: 30px;
+    margin-left: 90px;
+    background-color: #58b7c2;
+    font-size: medium;
+    display: block;
+    border-radius: 3px;
+    border: none;
+    margin-top: 20px;
+}
+
+.buttons:hover {
+    background-color: rgb(29, 164, 157);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 15px;
+}
+
+a>button {
+    width: 265px;
+    height: 30px;
+    margin-left: 90px;
+    background-color: ghostwhite;
+    font-size: medium;
+    display: block;
+    border-radius: 3px;
+    border: none;
+    margin-top: 20px;
+    color: rgb(29, 164, 157);
+}
+
+a>button:hover {
+    background-color: rgb(29, 164, 157);
+    cursor: pointer;
+    color: black;
+}
+
+
+/* products page */
+
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+#topSection {
+    width: 600px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: steelblue;
+}
+
+#productsContainer {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+
+#searchInput {
+    width: 250px;
+    height: 30px;
+    position: relative;
+    left: 20px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+label {
+    margin-left: 50px;
+    color: white;
+}
+
+#select {
+    height: 35px;
+    width: 105px;
+    position: relative;
+    border-radius: 3px;
+    left: 50px;
+    margin-right: 40px;
+    border-radius: 3px;
+    background-color: white;
+    color: darkblue;
+}
+
+#sortBtn {
+    width: 90px;
+    height: 35px;
+    position: relative;
+    left: 32px;
+    margin-right: 40px;
+    border-radius: 3px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+}
+
+#sortBtn:hover {
+    background-color: white;
+    color: darkblue;
+    cursor: pointer;
+}
+
+#buyBtn {
+    width: 200px;
+    height: 50px;
+    display: block;
+    background-color: royalblue;
+    transition: 0.3s;
+    border-radius: 3px;
+    border: none;
+    font-size: medium;
+    color: white;
+}
+
+#buyBtn:hover {
+    background-color: rgb(53, 81, 167);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* purchase page */
+
+#purchaseDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: powderblue;
+    width: 450px;
+    height: 400px;
+    margin: 100px auto;
+}
+
+#approveBtn {
+    width: 200px;
+    height: 50px;
+    display: block;
+    position: relative;
+    top: 40px;
+    background-color: royalblue;
+    transition: 0.3s;
+    border-radius: 3px;
+    border: none;
+    font-size: medium;
+    color: white;
+}
+
+#approveBtn:hover {
+    background-color: rgb(53, 81, 167);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#purchaseDiv>p {
+    font-size: 30px;
+    position: relative;
+    bottom: 40px;
+}
